@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      background-color: linen;
+    }
+
+    h1 {
+      color: green;
+      margin-left: 40px;
+    }
+
+    .page {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div class="page">
+      <h1 class="text" id="text">Test</h1>
+      <button id="btn">click me</button>
+
+      <!-- <div>
+        <input type="number" placeholder="first number" />
+        <input type="number" placeholder="second number" />
+        <p>result:</p>
+        <button id="add">add</button>
+      </div> -->
+    </div>
+  </body>
+  <script>
+    //DOM - document object model
+    // or how you will change html using javascript
+
+    //get element
+    //class name - document.getElementsByClassName('myClass');
+    //tag name - document.getElementsByTagName('h1');
+    //id - document.getElementById('myId');
+    //css selector - document.querySelector('.myClass');
+    //css selector - document.querySelectorAll('.myClass')
+
+    const text = document.getElementById("text");
+    const btn = document.getElementById("btn");
+
+    //const firstNum = document.getElementById("firstNum");
+    //const secondNum = document.getElementById("secondNum");
+
+    // Add element = .add("")
+    // Remove class = .remove("")
+
+    //edit element
+    text.innerHTML = "Hello World";
+
+    //add event listeners
+    //key press - keydown, keyup, click
+    btn.addEventListener("click", () => {
+      text.innerHTML = "im clicked";
+    });
+
+    //get the value of input
+    //firstNum.value
+  </script>
+</html>
